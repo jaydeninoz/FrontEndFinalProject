@@ -1,0 +1,25 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F8F8;
+    font-size: 12px;
+}
+
+header {
+    height: 200px;
+    background-color: white;
+}
+.page-padding {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.nav-link {
+    color: black !important;
+}
+.nav-active {
+    color: #43C3FA !important;
+}
+.right-nav {
+    background-color: #F8F9FA !important;
+    color: black;
+}
+
