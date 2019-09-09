@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #F8F8F8;
+    /* background-color: #F8F8F8; */
     font-size: 12px;
 }
 
@@ -12,6 +12,9 @@ header {
     padding-left: 20%;
     padding-right: 20%;
 }
+.nav-bar {
+    background-color: white !important;
+}
 .nav-link {
     color: black !important;
 }
@@ -19,7 +22,73 @@ header {
     color: #43C3FA !important;
 }
 .right-nav {
-    background-color: #F8F9FA !important;
+    /* background-color: #F8F9FA !important; */
     color: black;
+    float: right !important;
 }
 
+
+.second-top-content {
+    background-color: white;
+}
+/* ShopMe Logo */
+#logo {
+    position: relative;
+}
+#red-background {
+    width: 17%;
+    position: absolute;
+    top: 0;
+    right: 13%;
+}
+#red-cart {
+    
+    position: absolute;
+    width: 8%;
+    top: 14%;
+    right: 17.5%;
+    z-index: 3;
+}
+
+
+
+/* Seach bar */
+.search-cover{
+    border: #43C3FA solid 1px;
+}
+#search-button{
+    background-color: #3EBCF9;
+    font: white;
+    border: #3EBCF9 solid 1px;
+    border-radius: 0% !important;
+}
+#search-bar{
+    border: none !important;
+}
+#search-category {
+    border: none;
+    border-left: #3EBCF9 solid 0.5px;
+    border-radius: 0%;
+}
+
+/* Wishlist and Compare */
+
+/* The body */
+.body {
+    background-color: #F8F9FA;
+}
+.func {
+    background-color: #EFEFEF;
+    padding-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.func img {
+    width: 15%;
+    margin-right: 4px;
+}
+.func-content {
+    color: #2190C8;
+    font-weight: bold;
+}
