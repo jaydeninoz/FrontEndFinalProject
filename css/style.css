@@ -244,3 +244,12 @@ footer {
 .list-group-item{
     padding-left: 0;
 }
+
+/* Newsletter */
+#btn-newsletter {
+    background-color: #33ccff;
+    color: white;
+}
+.follow {
+    list-style-type: none;
+}
