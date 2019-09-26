@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="page-padding navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-active" href="#">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shopping Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Checkout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-0 mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <div class="dropdown right-nav">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                USD
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">AUD</a>
+                                <a class="dropdown-item" href="#">VND</a>
+                                <a class="dropdown-item" href="#">GBP</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="dropdown right-nav">
+                            <img src="./images/EnglishIcon.png" alt="">
+                            <a class="btn dropdown-toggle pl-0" href="#" role="button" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                English
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Vietnamese</a>
+                                <a class="dropdown-item" href="#">Japanese</a>
+                                <a class="dropdown-item" href="#">Chinese</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr class="mt-0">
+        <div class="second-top-content page-padding row">
+            <div class="col-3 mt-3" id="logo">
+                <img src="./images/main-logo.png" alt="logo" id="shopme-logo" class="w-75 pt-4">
+                <!-- <img src="./images/redIdea.png" alt="red background" id="red-background">
+                <img src="./images/cartInRed.png" alt="red cart" id="red-cart"> -->
+            </div>
+            <div class="search-box col-6 mt-4">
+                <span style="opacity: 0.7;">Call us for free: </span>
+                <span id="phone-number" style="color: #43C3FA; font-weight: bold;">+1888 234 4578</span>
+            
+                <div class="search-bar mt-2">
+                    <form class="form-inline">
+                        <span class="search-cover w-100 row">
+                            <input class="form-control mr-sm-0 col-8" id="search-bar"  type="search" placeholder="Search..." aria-label="Search">
+                            <select class="custom-select col-3" id="search-category" >
+                                <option selected>All Categories</option>
+                                <option value="1">Category 1</option>
+                                <option value="2">Category 2</option>
+                                <option value="3">Category 3</option>
+                            </select>
+                            <button class="btn btn-outline-success my-2 my-sm-0 col-1" id="search-button" type="submit"><i style="color: white; background-color:#3EBCF9" class="fas fa-search"></i></button>
+                        </span> 
+                    </form>                    
+                
+                </div>                
+            </div>
+            <div class="col-3">
+                <div class="wishlist-compare mt-3 ml-4">
+                    <span id="wishlist"><i class="fas fa-heart" style="color: #3EBCF9"></i>  Wishlist (7)</span>
+                    <span id="compare" class="ml-2"><i class="fas fa-compress-arrows-alt" style="color: #3EBCF9"></i> Compare (2)</span>
+                </div>
+                <div class="row pl-0 ">
+                    <div class="col-6 pl-0 mt-4">
+                        Login/Register
+                    </div>
+                    <div class="col-6 my-cart row border mt-2 pt-3 ml-1">
+                        <div class="col-4 p-0"><img src="./images/cartIcon.png" class="w-75" alt="cart" id="cart-icon"></div>
+                        
+                        <div class="col-8 p-0 float-right">
+                            <p style="opacity: 0.6; font-size: 0.8rem;" class="mb-0">My Cart</p>
+                            <p style="font-weight: bold;">$999.00</p>
+                        </div>           
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </header>
+
+    <div class="body">
+        <div class="page-padding">
+            <div class="">
+                <div class="row pt-5">
+                    <div class="col func col1 ml-1">
+                        <i class="far fa-thumbs-up func-icon"></i>
+                        <p class="func-content">THE HIGHEST PRODUCT QUALITY</p>
+                    </div>
+                    <div class="col func col2 ml-1">
+                        <i class="far fa-paper-plane func-icon"></i>
+                        <p class="func-content">FAST & FREE DELIVERY</p>
+                        
+                    </div>
+                    <div class="col func col3 ml-1">
+                        <i class="fas fa-unlock-alt func-icon"></i>
+                        <p class="func-content">SAFE & SECURE PAYMENT</p>
+                    </div>
+                    <div class="col func col4 ml-1">
+                        <i class="far fa-gem func-icon"></i>
+                        <p class="func-content">GET 10% OFF FOR REORDER</p>
+                    </div>
+                    <div class="col func col5 ml-1">
+                        <i class="fas fa-money-bill-wave func-icon"></i>
+                        <!-- <img src="./images/money.png" alt="" class="func-icon"> -->
+                        <p class="func-content">100% MONEY BACK GUARANTEED</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content row mt-5">
+                    <div class="left-content col-9 row mr-2">
+                        <div class="categories col-4 p-0">
+                            <h4 style="color: black;">Catagories</h4>
+                            <div class="btn-group dropright w-100">
+                                <button type="button" class="btn btn-light dropdown-toggle category-btn d-flex align-items-center justify-content-between" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Medicine & Health (1375)
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropright w-100">
+                                <button type="button" class="btn btn-light dropdown-toggle category-btn d-flex align-items-center justify-content-between" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Beauty (1687)
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropright w-100">
+                                <button type="button" class="btn btn-light dropdown-toggle category-btn d-flex align-items-center justify-content-between" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Personal Care (1306)
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropright w-100">
+                                <button type="button" class="btn btn-light dropdown-toggle category-btn d-flex align-items-center justify-content-between" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Vitamins & Supplements (202)
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropright w-100">
+                                <button type="button" class="btn btn-light dropdown-toggle category-btn d-flex align-items-center justify-content-between" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Baby Needs (525)
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropright w-100">
+                                <button type="button" class="btn btn-light dropdown-toggle category-btn d-flex align-items-center justify-content-between" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Diet & Fitness (135)
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropright w-100">
+                                <button type="button" class="btn btn-light dropdown-toggle category-btn d-flex align-items-center justify-content-between" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sexual & Well-being (296)
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="btn-group dropright w-100">
+                                <button type="button" class="btn btn-light dropdown-toggle category-btn d-flex align-items-center justify-content-between" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#3EBCF9;">
+                                    All Categories
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-show col-8 pr-0">
+                            <img src="./images/central-img.jpeg" class="w-100" alt="main pic">
+                            <div class="main-intro">
+                                <h3 style="color: #0099cc; font-weight: bold;">Best Quality</h3>
+                                <h3>Medications</h3>
+                                <h4 style="font-size: 14px; font-weight: bold; color:#0099cc">at Low Prices</h4>
+                                <button class="btn btn-primary mt-3 pl-3 pr-3" style="background-color: #33ccff; border: none;">Shop Now!</button>
+                            </div>
+                        </div>
+                        <div class="p-4"></div>
+                        <div class="feature-section col-12 pl-0">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link feature-link active" href="#">Featured</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link feature-link" href="#">Bestsellers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link feature-link" href="#">Hot</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link feature-link" href="#">Top Rated</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link feature-link" href="#">Sale</a>
+                                </li>
+                            </ul>
+                            <div class="feature-nav-group">
+                                <span class="feature-nav"><</span>
+                                <span class="feature-nav">></span>
+                            </div>
+                        </div>
+                        <div class="card-group">
+                            <div class="card col-12">
+                                <div class="card-image">
+                                    <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                    <div class="label-new badge badge-primary w-25" style="height: 1.3rem;">New</div>
+                                    <div class="love-icon" ><i class="fas fa-heart p-2" style="color: white; background-color: #666666;"></i></div>
+                                    <div class="compare-icon"><i class="fas fa-compress-arrows-alt p-2" style="color: white; background-color: #666666;"></i></div>
+                                    <div class="view-add">
+                                        <button type="button" class="btn btn-secondary mb-1" style="display: block;">Quick View</button>
+                                        <button type="button" class="btn btn-secondary " style="background-color: #33ccff; border: none;">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-1">Natural Factors PGX Daily Ultra Matrix 750mg, Softgels 120ea</h6>
+                                    <div class="feature-price">
+                                        <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-12">
+                                <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-1">Culturelle Kids! Probiotic Packets 30 ea</h6>
+                                    <div class="feature-price d-flex justify-content-between">
+                                        <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                        <div class="vote" style="font-size: 0.2rem; color: #ffcc00;">
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="far fa-star" style="font-size: 0.7rem;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-12">
+                                <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-1">L'Oreal Paris Youth Code BB Cream Illuminator SPF 15, Medium 2.5 fl oz (75ml)</h6>
+                                    <div class="feature-price">
+                                        <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 style="color: black;" class="mt-5">New Arrivals</h4>
+                        <div class="arrival-section row ml-0">
+                            <div class="arrival-left card col-3" style="border-right: none;">
+                                <h6 style="font-size: 1.1rem; font-weight: bold; color: #3399cc;" class="mt-3">PERSONAL CARE</h6>
+                                <p class="card-text mb-0" style="font-size: 0.8rem; font-weight: bold;">Oral care, Hair care</p>
+                                <img src="./images/rectan-hori-img.jpeg" class="card-img-top mt-3" alt="...">
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Shop Now</a>
+                                </div>
+                            </div>
+                       
+                            <div class="arrival-right col-9 align-items-start pl-0">
+                                <div class="card-group">
+                                    <div class="card col-12" style="border-bottom: none;">
+                                        <div class="card-image">
+                                            <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                            <div class="label-new badge badge-primary w-25">New</div>
+                                            <div class="love-icon"><i class="fas fa-heart p-1" style="color: white; background-color: #666666;"></i></div>
+                                            <div class="compare-icon"><i class="fas fa-compress-arrows-alt p-1" style="color: white; background-color: #666666;"></i></div>
+                                            <div class="view-add">
+                                                <button type="button" class="btn btn-secondary btn-sm mb-1" style="display: block;">Quick View</button>
+                                                <button type="button" class="btn btn-secondary btn-sm" style="background-color: #33ccff; border: none;">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-body pl-0 pr-0 pb-0">
+                                            <h6 class="card-title mb-1">Natural Factors PGX Daily Ultra Matrix 750mg, Softgels 120ea</h6>
+                                            <div class="feature-price">
+                                                <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-12" style="border-bottom: none;">
+                                        <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                        <div class="card-body pl-0 pr-0 pb-0">
+                                            <h6 class="card-title mb-1">Culturelle Kids! Probiotic Packets 30 ea</h6>
+                                            <div class="feature-price d-flex justify-content-between">
+                                                <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-12" style="border-bottom: none;">
+                                        <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                        <div class="card-body pl-0 pr-0 pb-0">
+                                            <h6 class="card-title mb-1">L'Oreal Paris Youth Code BB Cream Illuminator SPF 15, Medium 2.5 fl oz (75ml)</h6>
+                                            <div class="feature-price">
+                                                <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                </div>
+                                <div class="card-group">
+                                    <div class="card col-12">
+                                        <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                        <div class="card-body pl-0 pr-0 pb-0">
+                                            <h6 class="card-title mb-1">Natural Factors PGX Daily Ultra Matrix 750mg, Softgels 120ea</h6>
+                                            <div class="feature-price">
+                                                <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-12">
+                                        <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                        <div class="card-body pl-0 pr-0 pb-0">
+                                            <h6 class="card-title mb-1">Culturelle Kids! Probiotic Packets 30 ea</h6>
+                                            <div class="feature-price d-flex justify-content-between">
+                                                <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-12">
+                                        <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                        <div class="card-body pl-0 pr-0 pb-0">
+                                            <h6 class="card-title mb-1">L'Oreal Paris Youth Code BB Cream Illuminator SPF 15, Medium 2.5 fl oz (75ml)</h6>
+                                            <div class="feature-price">
+                                                <p style="color: #0099cc; font-weight: bold;">$44.99</p>
+                                            </div>
+                                        </div>
+                                    </div>                                      
+                                </div>
+                            </div>                       
+                        </div>
+                        <div class="our-brands col-12 p-0">
+                            <div class="title d-flex justify-content-between mt-5">
+                                <h4 style="color: black;">Our Brands</h4>
+                                <div class="our-brands-nav-group float-right">
+                                    <span class="our-brands-nav"><</span>
+                                    <span class="our-brands-nav">></span>
+                                </div>
+                            </div>
+                            <div class="brands row w-100 ml-0" style="background-color: white; border: #cccccc 1px solid;">
+                                <div class="brand col-3 p-3">
+                                    <img class="w-100" src="./images/rectan-verti-img.jpeg" alt="">
+                                </div>
+                                <div class="brand col-3 p-3">
+                                    <img class="w-100" src="./images/rectan-verti-img.jpeg" alt="">
+                                </div>
+                                <div class="brand col-3 p-3">
+                                    <img class="w-100" src="./images/rectan-verti-img.jpeg" alt="">
+                                </div>
+                                <div class="brand col-3 p-3">
+                                    <img class="w-100" src="./images/rectan-verti-img.jpeg" alt="">
+                                </div>
+                            </div>                          
+                        </div>
+                        <!-- Banner -->
+                        <div class="banner col-12 pt-5 mt-1 pl-0 pr-0 ml-0 row">
+                            
+                                <img src="./images/banner1.png" class="col-6 pl-0" alt="Banner 1">
+                                <img src="./images/banner2.png" class="col-6 pl-2 pr-0" alt="Banner 2">
+                            
+                            
+                        </div>
+                        <!-- Featured Sellers -->
+                        <div class="featured-sellers col-12 p-0">
+                            <div class="title d-flex justify-content-between mt-5">
+                                <h4 style="color: black;">Featured Sellers</h4>
+                                <div class="featured-sellers-nav-group float-right">
+                                    <span class="featured-sellers-nav"><</span>
+                                    <span class="featured-sellers-nav">></span>
+                                </div>
+                            </div>
+                            <div class="sellers row">
+                                <div class="seller col-12 col-sm-4 p-3" style="background: white;">
+                                    <div class="info d-flex">
+                                        <img src="./images/square-img.jpeg" class="w-25 " alt="">
+                                        <div class="info-content pl-3">
+                                            <span style="font-weight: bold">John Smith</span>
+                                            <p>Personal Care</p>
+                                        </div>
+                                    </div>
+                                    <img src="./images/rectan-verti-img.jpeg" class="w-100 mt-2" alt="">
+                                </div>
+                                <div class="seller col-12 col-sm-4 p-3" style="background: white;">
+                                    <div class="info d-flex">
+                                        <img src="./images/square-img.jpeg" class="w-25 " alt="">
+                                        <div class="info-content pl-3">
+                                            <span style="font-weight: bold">Ivana Wong</span>
+                                            <p>Baby needs</p>
+                                        </div>
+                                    </div>
+                                    <img src="./images/rectan-verti-img.jpeg" class="w-100 mt-2" alt="">
+                                </div>
+                                <div class="seller col-12 col-sm-4 p-3" style="background: white;">
+                                    <div class="info d-flex">
+                                        <img src="./images/square-img.jpeg" class="w-25 " alt="">
+                                        <div class="info-content pl-3">
+                                            <span style="font-weight: bold">Bradley Grosh</span>
+                                            <p>Vitamins & Supplements</p>
+                                        </div>
+                                    </div>
+                                    <img src="./images/rectan-verti-img.jpeg" class="w-100 mt-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lastest news -->
+                        <div class="featured-sellers col-12 p-0 mb-5">
+                            <div class="title d-flex justify-content-between mt-5">
+                                <h4 style="color: black;">Lastest News</h4>
+                                <div class="featured-sellers-nav-group float-right">
+                                    <span class="featured-sellers-nav"><</span>
+                                    <span class="featured-sellers-nav">></span>
+                                </div>
+                            </div>
+                            <div class="sellers row">
+                                <div class="seller col-12 col-sm-4 p-3" style="background: white;">
+                                    <img src="./images/rectan-verti-img.jpeg" class="w-100 mt-2" alt="">
+                                    <div class="info">
+                                        <div class="info-content pl-0 pt-3">
+                                            <span style="font-weight: bold">Vestibulum sed ante</span>
+                                            <p style="opacity: 0.6;">2019-05-09 08:20:15</p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tempora aspernatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="seller col-12 col-sm-4 p-3" style="background: white;">
+                                    <img src="./images/rectan-verti-img.jpeg" class="w-100 mt-2" alt="">
+                                    <div class="info">
+                                        <div class="info-content pl-0 pt-3">
+                                            <span style="font-weight: bold">Vestibulum sed ante</span>
+                                            <p style="opacity: 0.6;">2019-05-09 08:20:15</p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tempora aspernatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="seller col-12 col-sm-4 p-3" style="background: white;">
+                                    <img src="./images/rectan-verti-img.jpeg" class="w-100 mt-2" alt="">
+                                    <div class="info">
+                                        <div class="info-content pl-0 pt-3">
+                                            <span style="font-weight: bold">Vestibulum sed ante</span>
+                                            <p style="opacity: 0.6;">2019-05-09 08:20:15</p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tempora aspernatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-content col-3">
+                        <h4 style="color: red;">Today's Deals</h4>
+                        <div class="deal-list">
+                            <div class="card col-12">
+                                <div class="deal-image">
+                                    <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                    <div class="deal-label badge badge-danger w-25" style="font-size: 1rem; text-align: center; "><span style="display: block;">30%</span> OFF</div>
+                                </div>            
+                                <div class="time-section d-flex justify-content-center pt-2">
+                                    <div class="time row w-75 d-flex justify-content-between">
+                                        <div class="time-box-num col-3">20</div>
+                                        <div class="time-box-num col-3">15</div>
+                                        <div class="time-box-num col-3">37</div>
+                                        <div class="time-box-num col-3">08</div>
+                                        <div class="time-box col-3">days</div>
+                                        <div class="time-box col-3">hours</div>
+                                        <div class="time-box col-3">mins</div>
+                                        <div class="time-box col-3">secs</div>
+                                    </div>
+                                </div>              
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-2">Ivory Body Wash, Original 24 </h6>
+                                    <div class="feature-price d-flex justify-content-between pb-2">
+                                        <div class="deal-price">
+                                            <span style="color: grey; font-weight: bold; text-decoration: line-through;">$9.99</span>
+                                            <span style="color: #0099cc; font-weight: bold;">$5.99</span>
+                                        </div>
+                                        
+                                        <div class="vote pt-1" style="font-size: 0.2rem; color: #ffcc00;">
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="far fa-star" style="font-size: 0.7rem;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-12">
+                                <div class="deal-image">
+                                    <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                    <div class="deal-label badge badge-danger w-25" style="font-size: 1rem; text-align: center; "><span style="display: block;">30%</span> OFF</div>
+                                </div>            
+                                <div class="time-section d-flex justify-content-center pt-2">
+                                    <div class="time row w-75 d-flex justify-content-between">
+                                        <div class="time-box-num col-3">20</div>
+                                        <div class="time-box-num col-3">15</div>
+                                        <div class="time-box-num col-3">37</div>
+                                        <div class="time-box-num col-3">08</div>
+                                        <div class="time-box col-3">days</div>
+                                        <div class="time-box col-3">hours</div>
+                                        <div class="time-box col-3">mins</div>
+                                        <div class="time-box col-3">secs</div>
+                                    </div>
+                                </div>              
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-2">Ivory Body Wash, Original 24 </h6>
+                                    <div class="feature-price d-flex justify-content-between pb-2">
+                                        <div class="deal-price">
+                                            <span style="color: grey; font-weight: bold; text-decoration: line-through;">$9.99</span>
+                                            <span style="color: #0099cc; font-weight: bold;">$5.99</span>
+                                        </div>
+                                        
+                                        <div class="vote pt-1" style="font-size: 0.2rem; color: #ffcc00;">
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="far fa-star" style="font-size: 0.7rem;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-12">
+                                <div class="deal-image">
+                                    <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                    <div class="deal-label badge badge-danger w-25" style="font-size: 1rem; text-align: center; "><span style="display: block;">30%</span> OFF</div>
+                                </div>            
+                                <div class="time-section d-flex justify-content-center pt-2">
+                                    <div class="time row w-75 d-flex justify-content-between">
+                                        <div class="time-box-num col-3">20</div>
+                                        <div class="time-box-num col-3">15</div>
+                                        <div class="time-box-num col-3">37</div>
+                                        <div class="time-box-num col-3">08</div>
+                                        <div class="time-box col-3">days</div>
+                                        <div class="time-box col-3">hours</div>
+                                        <div class="time-box col-3">mins</div>
+                                        <div class="time-box col-3">secs</div>
+                                    </div>
+                                </div>              
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-2">Ivory Body Wash, Original 24 </h6>
+                                    <div class="feature-price d-flex justify-content-between pb-2">
+                                        <div class="deal-price">
+                                            <span style="color: grey; font-weight: bold; text-decoration: line-through;">$9.99</span>
+                                            <span style="color: #0099cc; font-weight: bold;">$5.99</span>
+                                        </div>
+                                        
+                                        <div class="vote pt-1" style="font-size: 0.2rem; color: #ffcc00;">
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="far fa-star" style="font-size: 0.7rem;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-12">
+                                <div class="deal-image">
+                                    <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                    <div class="deal-label badge badge-danger w-25" style="font-size: 1rem; text-align: center; "><span style="display: block;">30%</span> OFF</div>
+                                </div>            
+                                <div class="time-section d-flex justify-content-center pt-2">
+                                    <div class="time row w-75 d-flex justify-content-between">
+                                        <div class="time-box-num col-3">20</div>
+                                        <div class="time-box-num col-3">15</div>
+                                        <div class="time-box-num col-3">37</div>
+                                        <div class="time-box-num col-3">08</div>
+                                        <div class="time-box col-3">days</div>
+                                        <div class="time-box col-3">hours</div>
+                                        <div class="time-box col-3">mins</div>
+                                        <div class="time-box col-3">secs</div>
+                                    </div>
+                                </div>              
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-2">Ivory Body Wash, Original 24 </h6>
+                                    <div class="feature-price d-flex justify-content-between pb-2">
+                                        <div class="deal-price">
+                                            <span style="color: grey; font-weight: bold; text-decoration: line-through;">$9.99</span>
+                                            <span style="color: #0099cc; font-weight: bold;">$5.99</span>
+                                        </div>
+                                        
+                                        <div class="vote pt-1" style="font-size: 0.2rem; color: #ffcc00;">
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="far fa-star" style="font-size: 0.7rem;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-12">
+                                <div class="deal-image">
+                                    <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                    <div class="deal-label badge badge-danger w-25" style="font-size: 1rem; text-align: center; "><span style="display: block;">30%</span> OFF</div>
+                                </div>            
+                                <div class="time-section d-flex justify-content-center pt-2">
+                                    <div class="time row w-75 d-flex justify-content-between">
+                                        <div class="time-box-num col-3">20</div>
+                                        <div class="time-box-num col-3">15</div>
+                                        <div class="time-box-num col-3">37</div>
+                                        <div class="time-box-num col-3">08</div>
+                                        <div class="time-box col-3">days</div>
+                                        <div class="time-box col-3">hours</div>
+                                        <div class="time-box col-3">mins</div>
+                                        <div class="time-box col-3">secs</div>
+                                    </div>
+                                </div>              
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-2">Ivory Body Wash, Original 24 </h6>
+                                    <div class="feature-price d-flex justify-content-between pb-2">
+                                        <div class="deal-price">
+                                            <span style="color: grey; font-weight: bold; text-decoration: line-through;">$9.99</span>
+                                            <span style="color: #0099cc; font-weight: bold;">$5.99</span>
+                                        </div>
+                                        
+                                        <div class="vote pt-1" style="font-size: 0.2rem; color: #ffcc00;">
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="far fa-star" style="font-size: 0.7rem;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-12">
+                                <div class="deal-image">
+                                    <img src="/images/square-img.jpeg" class="card-img-top mt-3" alt="...">
+                                    <div class="deal-label badge badge-danger w-25" style="font-size: 1rem; text-align: center; "><span style="display: block;">30%</span> OFF</div>
+                                </div>            
+                                <div class="time-section d-flex justify-content-center pt-2">
+                                    <div class="time row w-75 d-flex justify-content-between">
+                                        <div class="time-box-num col-3">20</div>
+                                        <div class="time-box-num col-3">15</div>
+                                        <div class="time-box-num col-3">37</div>
+                                        <div class="time-box-num col-3">08</div>
+                                        <div class="time-box col-3">days</div>
+                                        <div class="time-box col-3">hours</div>
+                                        <div class="time-box col-3">mins</div>
+                                        <div class="time-box col-3">secs</div>
+                                    </div>
+                                </div>              
+                                <div class="card-body pl-0 pr-0 pb-0">
+                                    <h6 class="card-title mb-2">Ivory Body Wash, Original 24 </h6>
+                                    <div class="feature-price d-flex justify-content-between pb-2">
+                                        <div class="deal-price">
+                                            <span style="color: grey; font-weight: bold; text-decoration: line-through;">$9.99</span>
+                                            <span style="color: #0099cc; font-weight: bold;">$5.99</span>
+                                        </div>                               
+                                        <div class="vote pt-1" style="font-size: 0.2rem; color: #ffcc00;">
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="fas fa-star" style="font-size: 0.7rem;"></i>
+                                            <i class="far fa-star" style="font-size: 0.7rem;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="mt-5">Testimonials</h4>
+                        <div class="testi-list">
+                            <div class="card col-12 testi">
+                                <p class="mt-3" style="font-weight: bold;">Allan, Los Angeles</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nesciunt officia deleniti?</p>
+                                <img src="./images/half-quo.png" class="half-quo" alt="">
+                            </div>
+                            <div class="card col-12 testi">
+                                <p class="mt-3" style="font-weight: bold;">Allan, Los Angeles</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nesciunt officia deleniti?</p>
+                                <img src="./images/half-quo.png" class="half-quo" alt="">
+                            </div>
+                            <div class="card col-12 testi">
+                                <p class="mt-3" style="font-weight: bold;">Allan, Los Angeles</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nesciunt officia deleniti?</p>
+                                <img src="./images/half-quo.png" class="half-quo" alt="">
+                            </div>
+                            <div class="card col-12 testi">
+                                <button type="button" class="btn btn-light mt-2 mb-2" style="color: #0099cc; font-weight: bold;">View All Testimonials</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="page-padding">
+            <div class="footer-menu mt-5 row">
+                <div class="shopme-info col-sm-12 col-md-6 col-lg-3 pl-0">
+                    <img src="./images/main-logo.png" class="w-75 mb-4" alt="">
+                    
+                    <p style="color: gray;">Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. 
+                        <br><br>
+                            Email: <span style="color: #0099cc">info@companyname.com</span>                    
+                    </p>
+                </div>
+                <div class="footer-information col-sm-12 col-md-6 col-lg-3">
+                    <h5>Information</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">About Us</li>
+                        <li class="list-group-item">Delivery Information</li>
+                        <li class="list-group-item">Privacy Policy</li>
+                        <li class="list-group-item">Terms & Conditions</li>
+                        <li class="list-group-item">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footer-categories col-sm-12 col-md-6 col-lg-3">
+                    <h5>Categories</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Medicine & Health (1375)</li>
+                        <li class="list-group-item">Beauty (1687)</li>
+                        <li class="list-group-item">Personal Care (1036)</li>
+                        <li class="list-group-item">Vitamins & Supplements (202)</li>
+                        <li class="list-group-item">All Categories</li>
+                    </ul>
+                </div>
+                <div class="footer-account col-sm-12 col-md-6 col-lg-3">
+                    <h5>My Account</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">My Account</li>
+                        <li class="list-group-item">Order History</li>
+                        <li class="list-group-item">Returns</li>
+                        <li class="list-group-item">Wish List</li>
+                        <li class="list-group-item">Newsletter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="page-padding">
+            <div class="row">
+                <div class="newsletter col-sm-12 col-md-6 mt-2 pl-0 row">
+
+                    <h5 class="mr-3 mt-2 col-12 col-sm-4">Sign up to our newsletter</h5>
+                    <span class="col-12 col-sm-7 row">
+                        <input class="col-12 col-md-9" type="text" placeholder="Enter your email address" style="height: 2.5rem;">
+                        <button class="col-12 col-md-3" id="btn-newsletter" class="border-0" style="height: 2.5rem; width: 2.5rem"><i class="fas fa-envelope-square"></i></button>
+                    </span>
+                </div>
+                <div class="follow-us d-flex col-sm-12 col-md-6 mt-2 pl-0 row">
+                    <h5 class="mr-3 mt-2 col-sm-12">Follow Us</h5>
+                    <ul class="follow d-flex col-sm-12">
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                        <li class="float-left mr-1 mt-1"><img src="./images/icon-fb2.png" style="height: 2.5rem; width: 2.5rem;" alt="facebook"></li>
+                    </ul>               
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="page-padding">
+            <div class="">
+                <ul class="follow d-flex col-sm-12 d-flex justify-content-center mb-1">
+                    <li class="float-left mr-1 mt-1"><img src="./images/icon-visa.png" style="height: 2rem;" alt="visa"></li>
+                    <li class="float-left mr-1 mt-1"><img src="./images/icon-visa.png" style="height: 2rem;" alt="visa"></li>
+                    <li class="float-left mr-1 mt-1"><img src="./images/icon-visa.png" style="height: 2rem;" alt="visa"></li>
+                    <li class="float-left mr-1 mt-1"><img src="./images/icon-visa.png" style="height: 2rem;" alt="visa"></li>
+                    <li class="float-left mr-1 mt-1"><img src="./images/icon-visa.png" style="height: 2rem;" alt="visa"></li>
+                    <li class="float-left mr-1 mt-1"><img src="./images/icon-visa.png" style="height: 2rem;" alt="visa"></li>
+                    <li class="float-left mr-1 mt-1"><img src="./images/icon-visa.png" style="height: 2rem;" alt="visa"></li>
+                    <li class="float-left mr-1 mt-1"><img src="./images/icon-visa.png" style="height: 2rem;" alt="visa"></li>
+                </ul>
+            </div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item border-right">
+                    <a class="nav-link px-2" href="#">Medicine & Health</a>
+                </li>
+    
+                <li class="nav-item border-right">
+                    <a class="nav-link px-2" href="#">Beauty</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link px-2" href="#">Personal Care</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link px-2" href="#">Vitamins & Supplements</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link px-2" href="#">Baby Needs</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link px-2" href="#">Diet & Fitness</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="#">Sexual Well-being</a>
+                </li>
+            </ul>
+            <div class="">
+                <p class="d-flex justify-content-center">&copy; 2014 Shopme All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
